@@ -44,10 +44,5 @@
     "postcss-syntax": "^0.36.2",
     "sass": "^1.43.2"
   },
-  "dependencies": {
-    "@fancyapps/ui": "^4.0.6",
-    "inputmask": "^5.0.6",
-    "jquery": "^3.6.0",
-    "swiper": "^7.0.9"
-  }
+  "dependencies": {}
 }

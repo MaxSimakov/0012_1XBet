@@ -53,8 +53,8 @@ $.gulp.task('default', $.gulp.series('svg', 'svgCopy',
     $.gulp.parallel(
         'img',
         'pug',
-        'libs',
-        'scripts:common',
+        // 'libs',
+        // 'scripts:common',
         'sass',
         'serv', 'watch'
     ),

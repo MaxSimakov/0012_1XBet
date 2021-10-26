@@ -1,0 +1,28 @@
+mixin sWatchSports(data)
+	// start sWatchSports
+	+b.SECTION.sWatchSports.bg-wrap.section#sWatchSports&attributes(attributes)
+		+b.section-title
+			h1 Смотри спорт онлайн
+		picture.picture-bg
+			source(type='image/webp' srcset='img/@2x/webp/watch-bg-lg.webp' media='(min-width:992px)')
+			source(type='image/webp' srcset='img/@2x/webp/watch-bg-sm.webp')
+			source(type='image/jpg' srcset='img/@2x/watch-bg-lg.png' media='(min-width:992px)')
+			source(type='image/jpg' srcset='img/@2x/watch-bg-sm.png')
+			img.object-fit-js(src='img/@2x/watch-bg-lg.png' alt='' loading='lazy')
+		+e.content
+			+e.logo
+				img(src="img/svg/logo.svg", alt="")
+			+e.main
+				img(src="img/svg/sWatchSports.svg", alt="")
+				+e.advantages
+						mixin item(i, t)
+								+e.item
+									+e.img-wrap
+										img(src=`img/@2x/advantage-${i}.png`, alt="")
+									.text-white!= t
+						+item(1, `Абсолютно <br> бесплатно`)
+						+item(2, `Прямой <br> эфир`)
+						+item(3, `Простая <br> регистрация`)
+			+e.btn(href="#")
+				span Регистрация
+	// end sWatchSports
