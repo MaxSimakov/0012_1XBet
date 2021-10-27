@@ -1,4 +1,4 @@
-mixin sWatchSports(data)
+mixin sWatchSports(i, b)
 	// start sWatchSports
 	+b.sWatchSports.bg-wrap.section#sWatchSports&attributes(attributes)
 		picture.picture-bg
@@ -10,16 +10,8 @@ mixin sWatchSports(data)
 		+e.logo
 			img(src="img/svg/logo.svg", alt="")
 		+e.main
-			img(src="img/svg/sWatchSports.svg", alt="")
-			+e.advantages
-					mixin item(i, t)
-							+e.item
-								+e.img-wrap
-									img(src=`img/@2x/advantage-${i}.png`, alt="")
-								.text-white!= t
-					+item(1, `Абсолютно <br> бесплатно`)
-					+item(2, `Прямой <br> эфир`)
-					+item(3, `Простая <br> регистрация`)
+			img(src=`img/svg/sWatchSports-${i}.svg`, alt="")
+			block
 		+e.btn(href="https://refpa.top/L?tag=d_514359m_97c_watch_stream&site=514359&ad=97&r=registration/")
-			span Регистрация
+			span!= b
 	// end sWatchSports

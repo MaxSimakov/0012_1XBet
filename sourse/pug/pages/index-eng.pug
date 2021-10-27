@@ -9,20 +9,19 @@ block variables
 	- let  bg= null
 
 block title
-	- let  title= 'Смотри спорт онлайн'
+	- let  title= 'Watch sports online'
 	title= title
 block pagecontent
-	+sWatchSports(`ru`, `Регистрация`)
-		img(src="img/svg/sWatchSports.svg", alt="")
+	+sWatchSports(`eng`, `registration`)
 		+e.advantages
 				mixin item(i, t)
 						+e.item
 							+e.img-wrap
 								img(src=`img/@2x/advantage-${i}.png`, alt="")
 							.text-white!= t
-				+item(1, `Абсолютно <br> бесплатно`)
-				+item(2, `Прямой <br> эфир`)
-				+item(3, `Простая <br> регистрация`)
+				+item(1, `Absolutely <br> free`)
+				+item(2, `Live <br> broadcasts`)
+				+item(3, `Quick <br> signup`)
 
 
 
