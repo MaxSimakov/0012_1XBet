@@ -1,37 +1,28 @@
 // start .sWatchSports
 .sWatchSports {
-	--sPY: calc(10px +6vh);
+	// --sPY: calc(10px +6vh);
 	min-height: 100vh;
 	background-color: #011c4d;
 	// height: 900px;
-	--sPT: var(--sPY);
-	--sPB: var(--sPY);
+	--sPT: #{rem(77)};
+	--sPB: #{rem(68)};
 	--sTPB: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: rem(22);
-	padding-right: rem(22);
-	@include media-breakpoint-up(sm) {
-		padding-left: rem(32);
-		padding-right: rem(32);
-	}
+	padding-left: rem(32);
+	padding-right: rem(32);
 	@include media-breakpoint-up(md) {
 		padding-left: rem(41);
 		padding-right: rem(41);
+		--sPT: #{rem(80)};
+		--sPB: #{rem(38.75)};
 	}
-	@include media-breakpoint-up(sm) {
-		// height: 1334px;
-	}
-	@include media-breakpoint-up(md) {
-		// height: 1024px;
-		// --sPT: #{rem(55)};
-		// --sPB: #{rem(40)};
-	}
+
 	@include media-breakpoint-up(xl) {
-		// --sPT: #{rem(63)};
-		// --sPB: #{rem(63)};
+		--sPT: #{rem(63)};
+		--sPB: #{rem(63)};
 	}
 	picture {
 		img {
@@ -41,14 +32,18 @@
 
 	&__logo {
 		text-align: center;
-		margin-bottom: var(--sPY);
+		margin-bottom: calc(var(--sPT) / 2);
+		@include media-breakpoint-up(md) {
+		}
+		@include media-breakpoint-up(xl) {
+		}
 
 		img {
 			height: auto;
 			max-width: 40vw;
-			width: rem(180);
+			width: rem(207);
 			@include media-breakpoint-up(md) {
-				width: rem(207);
+				width: rem(180);
 			}
 			@include media-breakpoint-up(xl) {
 				width: rem(215);
@@ -58,17 +53,13 @@
 	&__main {
 		width: 100%;
 		text-align: center;
-
 		& > img {
 			height: auto;
 			width: 88vw;
 			max-width: 100%;
-			// margin-bottom: rem(100);
-			@include media-breakpoint-up(sm) {
-				// margin-bottom: rem(145);
-			}
+			margin-bottom: rem(144.04);
 			@include media-breakpoint-up(md) {
-				// margin-bottom: rem(77);
+				margin-bottom: rem(77.04);
 				max-width: rem(650);
 			}
 			@include media-breakpoint-up(lg) {
@@ -84,9 +75,7 @@
 		display: flex;
 		align-items: center;
 		max-width: 100%;
-		margin-top: calc(var(--sPY) * 0.5);
-
-		// margin-top: var(--bs-gutter-y);
+		margin-top: var(--bs-gutter-y);
 		@include media-breakpoint-up(xl) {
 			justify-content: center;
 		}
@@ -100,10 +89,14 @@
 				text-align: right;
 			}
 			img {
-				max-width: rem(73);
-				max-height: rem(67);
 				width: auto;
 				height: auto;
+				max-width: rem(103);
+				max-height: rem(95);
+				@include media-breakpoint-up(md) {
+					max-width: rem(73);
+					max-height: rem(67);
+				}
 				@include media-breakpoint-up(xxl) {
 					max-width: rem(103);
 					max-height: rem(95);
@@ -113,14 +106,15 @@
 		.text-white {
 			font-style: italic;
 			font-weight: 900;
-			font-size: rem(26);
+			font-size: rem(34);
 			line-height: calc(40 / 34);
 			text-align: left;
 			text-transform: uppercase;
-			padding-left: rem(16);
-			@include media-breakpoint-up(sm) {
+			padding-left: rem(26);
+			@include media-breakpoint-up(md) {
 				// padding-left: rem(49);
-				padding-left: rem(26);
+				font-size: rem(26);
+				padding-left: rem(16);
 			}
 			@include media-breakpoint-up(xxl) {
 				font-size: rem(34);
@@ -133,11 +127,11 @@
 		flex-direction: column;
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 276px;
-
-		// --bs-gutter-y: #{rem(60)};
-		// margin-top: calc(-1 * var(--bs-gutter-y));
-		@include media-breakpoint-up(sm) {
+		max-width: 375px;
+		
+		--bs-gutter-y: #{rem(60)};
+		margin-top: calc(-1 * var(--bs-gutter-y));
+		@include media-breakpoint-up(md) {
 			max-width: 340px;
 			// --bs-gutter-y: #{rem(45)};
 		}
@@ -153,15 +147,17 @@
 	&__btn {
 		width: 88vw;
 		max-width: 100%;
-		padding: rem(11);
+		padding: rem(15);
 		border: 2px solid #8edd04;
 		box-sizing: border-box;
 		border-radius: 91px;
 		text-align: center;
 		box-shadow: 0px 0px 20px 4px #8edd04;
-		margin-top: var(--sPY);
-		@include media-breakpoint-up(sm) {
-			max-width: rem(450);
+		max-width: rem(599);
+		margin-top: calc(var(--sPT) / 2);
+		@include media-breakpoint-up(md) {
+			max-width: rem(485);
+			padding: rem(12);
 		}
 		@include media-breakpoint-up(xxl) {
 			max-width: rem(555);
@@ -173,8 +169,8 @@
 		}
 		span {
 			display: block;
-			padding: rem(15);
-			font-size: rem(26);
+			padding: rem(21);
+			font-size: rem(36);
 			background: #8edd04;
 			box-shadow: 0px 0px 17px 8px rgba(142, 221, 4, 0.7), inset 0px 2px 1px #cbef06;
 			border-radius: 91px;
@@ -183,13 +179,15 @@
 			line-height: calc(42 / 36);
 			color: #011c4d;
 			text-transform: uppercase;
-			// @include media-breakpoint-up(sm) {
-			// 	padding: rem(19.5);
-			// 	font-size: rem(36);
-			// }
+			@include media-breakpoint-up(md) {
+				padding: rem(15);
+				font-size: rem(30);
+				line-height: calc(35 / 30);
+			}
 			@include media-breakpoint-up(xxl) {
 				padding: rem(19.5);
 				font-size: rem(36);
+				line-height: calc(42 / 36);
 			}
 		}
 	}
