@@ -1,7 +1,7 @@
 // start .sWatchSports
 .sWatchSports {
 	// --sPY: calc(10px +6vh);
-	min-height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	background-color: #011c4d;
 	// height: 900px;
 	--sPT: #{rem(77)};
@@ -57,9 +57,9 @@
 			height: auto;
 			width: 88vw;
 			max-width: 100%;
-			margin-bottom: rem(144.04);
+			margin-bottom: calc(10px + 8vh);
 			@include media-breakpoint-up(md) {
-				margin-bottom: rem(77.04);
+				margin-bottom: calc(10px + 5vh);
 				max-width: rem(650);
 			}
 			@include media-breakpoint-up(lg) {
