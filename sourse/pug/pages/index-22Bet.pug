@@ -1,0 +1,27 @@
+extends layout/main.pug
+
+
+include ../blocks/sWatchSports22/_sWatchSports22.pug
+//- include ../blocks/sContact/_sContact.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Watch sports online'
+	title= title
+block pagecontent
+	+sWatchSports22(`eng`, `registration`)
+		+e.advantages
+				mixin item(i, t)
+						+e.item
+							+e.img-wrap
+								img(src=`img/@2x/advantage22-${i}.png`, alt="")
+							.text-white!= t
+				+item(1, `Absolutely <br> free`)
+				+item(2, `Live <br> broadcasts`)
+				+item(3, `Quick <br> signup`)
+
+
+

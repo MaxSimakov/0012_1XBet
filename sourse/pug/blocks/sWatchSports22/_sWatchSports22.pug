@@ -1,0 +1,20 @@
+mixin sWatchSports22(i, b)
+	// start sWatchSports22
+	+b.SECTION.sWatchSports22.bg-wrap.section#sWatchSports22&attributes(attributes)
+		.picture.picture-bg
+			source(type='image/webp' srcset='img/@2x/webp/watch22-bg-lg.webp' media='(min-width:992px)')
+			source(type='image/webp' srcset='img/@2x/webp/watch22-bg-sm.webp')
+			source(type='image/png' srcset='img/@2x/watch22-bg-lg.png' media='(min-width:992px)')
+			source(type='image/png' srcset='img/@2x/watch22-bg-sm.png')
+			img.object-fit-js(src='img/@2x/watch22-bg-lg.png' alt='' loading='lazy')
+		+e.logo
+			img(src="img/@2x/logo-22.png", alt="")
+		+e.main
+			+e.wrap
+				img.text-img(src=`img/@2x/sWatchSports22-${i}.png`, alt="")
+				img.bg(src=`img/svg/Ellipse.svg`, alt="")
+			block
+		+e.btn(href="https://refpa.top/L?tag=d_514359m_97c_watch_stream&site=514359&ad=97&r=registration/")
+			span!= b
+	// end sWatchSports22
+
