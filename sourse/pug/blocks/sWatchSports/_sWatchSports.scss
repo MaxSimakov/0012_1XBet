@@ -57,9 +57,9 @@
 			height: auto;
 			width: 88vw;
 			max-width: 100%;
-			margin-bottom: calc(10px + 8vh);
+			margin-bottom: 7vh;
 			@include media-breakpoint-up(md) {
-				margin-bottom: calc(10px + 5vh);
+				margin-bottom: calc(10px + 4vh);
 				max-width: rem(650);
 			}
 			@include media-breakpoint-up(lg) {
