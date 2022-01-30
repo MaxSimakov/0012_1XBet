@@ -254,8 +254,12 @@
 			width: rem(1620);
 			margin-left: auto;
 			margin-right: auto;
+			text-align: center;
 			img {
-				max-width: 100%;
+				max-width: 75%;
+				@include media-breakpoint-up(xl) {
+					max-width: 100%;
+				}
 			}
 			.row {
 				--bs-gutter-y: #{rem(20)};
@@ -309,11 +313,16 @@
 		}
 	}
 	.sWatchSports22__advantages {
+		// sm: 576px,
+		// md: 768px,
+		// lg: 992px,
+		// xl: 1200px,
+		// xxl: 1500px
 		@include media-breakpoint-up(xxl) {
 			max-width: 1035px;
 		}
 	}
-	
+
 	@include media-breakpoint-up(xl) {
 	}
 	@include media-breakpoint-up(lg) {
