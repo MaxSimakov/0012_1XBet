@@ -1,0 +1,27 @@
+extends layout/main.pug
+
+
+include ../blocks/sWatchSports22/_sWatchSports22.pug
+//- include ../blocks/sContact/_sContact.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= '22bet - watch sports online'
+	title= title
+block pagecontent
+	+sWatchSports22Alt(`eng`, `registration`)
+		+e.advantages.d-md-none.d-xl-flex
+				mixin item(i, t)
+						+e.item
+							+e.img-wrap
+								img(src=`img/svg/advantage22alt-${i}.svg`, alt="")
+							.text-white!= t
+				+item(1, `live <br> broadcasts`)
+				+item(2, `Free match <br> broadcasts`)
+				+item(3, `Easy <br> registration`)
+
+
+

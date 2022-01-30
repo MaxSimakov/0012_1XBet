@@ -9,7 +9,10 @@ $file-format: woff2;
 // @include font-face ($default-font, $addr + "Roboto-Regular/Roboto-Regular", $file-formats: $file-format);
 // @include font-face ($default-font, $addr + "Roboto-Bold/Roboto-Bold", bold, $file-formats: $file-format);
 // @include font-face ($default-font, $addr + "Roboto-Medium/Roboto-Medium", 500, $file-formats: $file-format);
-@include font-face ('TTSquaresCondensed', $addr + "TTSquaresCondensed-BlackItalic/TTSquaresCondensed-BlackItalic", 900, $file-formats: $file-format);
+@include font-face ('TTSquaresCondensed', $addr + "TTSquaresCondensed-Black", 900, $file-formats: $file-format);
+@include font-face ('TTSquaresCondensed', $addr + "TTSquaresCondensed-BlackItalic", 900, italic, $file-formats: $file-format);
+@include font-face ('TTSquaresCondensed', $addr + "TTSquaresCondensed-Bold", 700, $file-formats: $file-format);
+@include font-face ('TTSquaresCondensed', $addr + "TTSquaresCondensed-BoldItalic", 700, italic, $file-formats: $file-format);
 @include font-face ($default-font, $addr + "Roboto-Black/Roboto-Black", 900, $file-formats: $file-format);
 @include font-face ($default-font, $addr + "Roboto-BlackItalic/Roboto-BlackItalic", 900, $file-formats: $file-format);
 

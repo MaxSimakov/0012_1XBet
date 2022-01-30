@@ -231,6 +231,89 @@
 			}
 		}
 	}
+	&--alt {
+		.sWatchSports22__logo {
+			img {
+				height: auto;
+				max-width: 40vw;
+				width: rem(180);
+				@include media-breakpoint-up(md) {
+					width: rem(156);
+				}
+				@include media-breakpoint-only(xl) {
+					width: rem(156);
+				}
+				@include media-breakpoint-up(xxl) {
+					width: rem(156);
+				}
+			}
+		}
+		.sWatchSports22__wrap {
+			display: block;
+			max-width: 85%;
+			width: rem(1620);
+			margin-left: auto;
+			margin-right: auto;
+			img {
+				max-width: 100%;
+			}
+			.row {
+				--bs-gutter-y: #{rem(20)};
+				@include media-breakpoint-up(xl) {
+					flex-wrap: nowrap;
+				}
+			}
+			p {
+				color: $white;
+				font-weight: 900;
+				font-size: rem(45);
+				line-height: calc(52 / 45);
+				font-style: normal;
+				text-align: center;
+				text-transform: uppercase;
+				margin-bottom: 0;
+				@include media-breakpoint-only(xl) {
+					font-size: rem(33);
+				}
+				br {
+					display: none;
+					@include media-breakpoint-up(xl) {
+						display: block;
+					}
+				}
+			}
+		}
+		.sWatchSports22__item {
+			@include media-breakpoint-up(xl) {
+				flex-direction: column;
+				justify-content: space-around;
+				width: rem(230);
+			}
+			.text-white {
+				font-weight: bold;
+				font-style: normal;
+				@include media-breakpoint-up(xl) {
+					margin-top: rem(25);
+					padding-left: 0;
+					text-align: center;
+				}
+			}
+		}
+		.sWatchSports22__img-wrap {
+			position: relative;
+			width: rem(83);
+			height: rem(83);
+			img {
+				@include a-cent;
+			}
+		}
+	}
+	.sWatchSports22__advantages {
+		@include media-breakpoint-up(xxl) {
+			max-width: 1035px;
+		}
+	}
+	
 	@include media-breakpoint-up(xl) {
 	}
 	@include media-breakpoint-up(lg) {

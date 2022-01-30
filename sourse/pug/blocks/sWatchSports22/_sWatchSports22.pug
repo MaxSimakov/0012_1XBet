@@ -20,3 +20,28 @@ mixin sWatchSports22(i, b)
 			span!= b
 	// end sWatchSports22
 
+mixin sWatchSports22Alt(i, b)
+	// start sWatchSports22
+	+b.SECTION.sWatchSports22--alt.bg-wrap.section#sWatchSports22&attributes(attributes)
+		picture.picture-bg
+			source(type='image/webp' srcset='img/@2x/webp/watch22alt-bg-lg.webp' media='(min-width:992px)')
+			source(type='image/webp' srcset='img/@2x/webp/watch22alt-bg-sm.webp')
+			source(type='image/png' srcset='img/@2x/watch22alt-bg-lg.png' media='(min-width:992px)')
+			source(type='image/png' srcset='img/@2x/watch22alt-bg-sm.png')
+			img.object-fit-js(src='img/@2x/watch22alt-bg-lg.png' alt='' loading='lazy')
+		+e.logo
+			img(src="img/@2x/logo-22.png", alt="")
+		+e.main
+			+e.wrap
+				.row.align-items-center
+					.col-xl-5
+						img(src=`img/svg/sWatchLive-${i}.svg`, alt="")
+					.col-xl
+						p And <br> get
+					.col-xl-5
+						img(src=`img/svg/freebets-${i}.svg`, alt="")
+			block
+		+e.btn(href="https://stv.one/22bet_streaming")
+			span!= b
+	// end sWatchSports22
+
