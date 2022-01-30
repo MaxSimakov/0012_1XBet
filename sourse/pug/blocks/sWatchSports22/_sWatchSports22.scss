@@ -313,11 +313,9 @@
 		}
 	}
 	.sWatchSports22__advantages {
-		// sm: 576px,
-		// md: 768px,
-		// lg: 992px,
-		// xl: 1200px,
-		// xxl: 1500px
+		@media (min-aspect-ratio: 768/1024) and (max-width: 1199.98px) {
+			display: none;
+		}
 		@include media-breakpoint-up(xxl) {
 			max-width: 1035px;
 		}
