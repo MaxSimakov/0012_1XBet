@@ -250,11 +250,14 @@
 		}
 		.sWatchSports22__wrap {
 			display: block;
-			max-width: 100%;
-			width: rem(1620);
+			width: 100%;
+			// width: rem(1620);
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
+			@include media-breakpoint-up(xl) {
+				max-width: 90%;
+			}
 			img {
 				max-width: 100%;
 			}
@@ -274,7 +277,7 @@
 				text-transform: uppercase;
 				margin-bottom: 0;
 				@include media-breakpoint-only(xl) {
-					font-size: rem(33);
+					font-size: rem(40);
 				}
 				br {
 					display: none;
@@ -290,6 +293,10 @@
 				justify-content: space-around;
 				width: rem(230);
 			}
+			@include media-breakpoint-down(lg) {
+				max-width: unset;
+			}
+
 			.text-white {
 				font-weight: bold;
 				font-style: normal;
@@ -298,24 +305,51 @@
 					padding-left: 0;
 					text-align: center;
 				}
+				@include media-breakpoint-down(lg) {
+					font-size: rem(28);
+				}
+				@include media-breakpoint-down(md) {
+					font-size: rem(26);
+				}
 			}
-		}
-		.sWatchSports22__img-wrap {
-			position: relative;
-			width: rem(83);
-			height: rem(83);
-			img {
-				@include a-cent;
+			.sWatchSports22__img-wrap {
+				position: relative;
+				width: rem(65);
+				height: rem(65);
+				min-width: rem(65);
+				@include media-breakpoint-up(md) {
+					min-width: rem(70);
+					width: rem(70);
+					height: rem(70);
+				}
+				@include media-breakpoint-up(lg) {
+					min-width: rem(83);
+					width: rem(83);
+					height: rem(83);
+				}
+				img {
+					@include a-cent;
+					max-width: 100%;
+					max-height: 100%;
+				}
 			}
 		}
 	}
 	.sWatchSports22__advantages {
-		@media (min-aspect-ratio: 768/1024) and (max-width: 1199.98px) {
-			display: none;
+		@include media-breakpoint-down(lg) {
+			display: inline-flex;
+			max-width: unset;
+			--bs-gutter-y: 3.5vh;
+		}
+		@media (min-aspect-ratio: 820/1180) and (max-width: 1199.98px) {
+			display: none !important;
 		}
 		@include media-breakpoint-up(xxl) {
 			max-width: 1035px;
 		}
+	}
+	.sWatchSports22__btn {
+		margin-top: 5vh;
 	}
 
 	@include media-breakpoint-up(xl) {
