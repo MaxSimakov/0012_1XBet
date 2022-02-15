@@ -257,10 +257,15 @@
 			margin-right: auto;
 			text-align: center;
 			@include media-breakpoint-up(xl) {
-				max-width: rem(1200);
+				max-width: 100%;
+				width: rem(1200);
+			}
+			@include media-breakpoint-up(xxl) {
+				width: rem(1400);
 			}
 			img {
-				max-width: 512px;
+				width: 512px;
+				max-width: 100%;
 			}
 			.row {
 				--bs-gutter-y: #{rem(20)};

@@ -1,7 +1,7 @@
 {
-	"eng":{
-		"name":"eng",
-		"title":"22bet - watch sports online",
+	"eng": {
+		"name": "eng",
+		"title": "22bet - watch sports online",
 		"btnText": "registration",
 		"and": "And <br> get",
 		"items": [
@@ -10,17 +10,26 @@
 			"Easy <br> registration"
 		]
 	},
-	
-	"de":{
-		"name":"de",
-		"title":"22bet - watch sports online",
+	"de": {
+		"name": "de",
+		"title": "22bet - watch sports online",
 		"btnText": "Anmeldung",
-		"and": "y consigue ",
-			"items": [
-				"Live - <br> Übertragung",
-				"Kostenlose  <br> Spielübertragungen",
-				"Einfache <br> Registrierung"
-				]
+		"and": "UND <br> ERHALTEN ",
+		"items": [
+			"Live - <br> Übertragung",
+			"Kostenlose  <br> Spielübertragungen",
+			"Einfache <br> Registrierung"
+		]
+	},
+	"es": {
+		"name": "es",
+		"title": "22bet - watch sports online",
+		"btnText": "Registro",
+		"and": "y&nbsp;consigue",
+		"items": [
+			"Transmisi&oacute;n <br> en&nbsp;directo",
+			"Retransmisiones <br> gratuitas&nbsp;de&nbsp;partidos",
+			"Registro <br> f&aacute;cil"
+		]
 	}
-
 }
