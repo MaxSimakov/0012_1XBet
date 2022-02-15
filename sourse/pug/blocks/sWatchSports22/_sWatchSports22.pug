@@ -20,7 +20,7 @@ mixin sWatchSports22(i, b)
 			span!= b
 	// end sWatchSports22
 
-mixin sWatchSports22Alt(i, b)
+mixin sWatchSports22Alt(i, b, and)
 	// start sWatchSports22
 	+b.SECTION.sWatchSports22--alt.bg-wrap.section#sWatchSports22&attributes(attributes)
 		picture.picture-bg
@@ -37,7 +37,7 @@ mixin sWatchSports22Alt(i, b)
 					.col-xl-auto
 						img(src=`img/svg/sWatchLive-${i}.svg`, alt="")
 					.col-xl-auto
-						p And <br> get
+						p!= and
 					.col-xl-auto
 						img(src=`img/svg/freebets-${i}.svg`, alt="")
 			block
