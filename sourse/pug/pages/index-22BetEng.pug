@@ -9,19 +9,25 @@ block variables
 	- let  bg= null
 
 block title
-	- let  title= '22bet - watch sports online'
+	-
+		let  title= '22bet - watch sports online'
+		let content = {
+			language: "eng",
+			btnText: 'registration',
+			items: [
+				"live <br> broadcasts",
+				"Free match <br> broadcasts",
+				"Easy <br> registration"
+				]
+		}
 	title= title
 block pagecontent
-	+sWatchSports22Alt(`eng`, `registration`)
+	+sWatchSports22Alt(content.language, content.btnText)
 		+e.advantages
-				mixin item(i, t)
+				each item, index in content.items
 						+e.item
 							+e.img-wrap
-								img(src=`img/svg/advantage22alt-${i}.svg`, alt="")
-							.text-white!= t
-				+item(1, `live <br> broadcasts`)
-				+item(2, `Free match <br> broadcasts`)
-				+item(3, `Easy <br> registration`)
-
+								img(src=`img/svg/advantage22alt-${index}.svg`, alt="")
+							.text-white!= item
 
 
