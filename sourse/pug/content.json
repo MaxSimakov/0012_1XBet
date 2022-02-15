@@ -75,5 +75,38 @@
 			"Ingyenes&nbsp;m&eacute;rkőz&eacute;s <br> k&ouml;zvet&iacute;t&eacute;sek",
 			"Egyszerű <br> regisztr&aacute;ci&oacute;"
 		]
+	},
+	"fi": {
+		"name": "fi",
+		"title": "22bet - watch sports online",
+		"btnText": "Rekister&ouml;inti",
+		"and": "ja&nbsp;saat",
+		"items": [
+			"Suora <br> l&auml;hetys",
+			"Ilmaiset <br> ottelul&auml;hetykset",
+			"Helppo <br> rekister&ouml;inti"
+		]
+	},
+	"no": {
+		"name": "no",
+		"title": "22bet - watch sports online",
+		"btnText": "Registrering",
+		"and": "og&nbsp;f&aring;",
+		"items": [
+			"Direktesending",
+			"Gratis <br> kampsendinger",
+			"Enkel <br> registrering"
+		]
+	},
+	"pl": {
+		"name": "pl",
+		"title": "22bet - watch sports online",
+		"btnText": "Rejestracja",
+		"and": "i&nbsp;otrzymuj",
+		"items": [
+			"Transmisja <br> na&nbsp;żywo",
+			"Bezpłatne <br> transmisje&nbsp;mecz&oacute;w",
+			"Łatwa <br> rejestracja"
+		]
 	}
 }

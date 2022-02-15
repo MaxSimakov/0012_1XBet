@@ -9,3 +9,6 @@
 2. <https://maxsimakov.github.io/0012_1XBet/public/index-22BetCz.html>
 2. <https://maxsimakov.github.io/0012_1XBet/public/index-22BetRo.html>
 2. <https://maxsimakov.github.io/0012_1XBet/public/index-22BetHu.html>
+2. <https://maxsimakov.github.io/0012_1XBet/public/index-22BetFi.html>
+2. <https://maxsimakov.github.io/0012_1XBet/public/index-22BetNo.html>
+2. <https://maxsimakov.github.io/0012_1XBet/public/index-22BetPl.html>
