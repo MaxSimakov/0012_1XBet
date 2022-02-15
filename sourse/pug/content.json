@@ -31,5 +31,49 @@
 			"Retransmisiones <br> gratuitas&nbsp;de&nbsp;partidos",
 			"Registro <br> f&aacute;cil"
 		]
+	},
+	"pt": {
+		"name": "pt",
+		"title": "22bet - watch sports online",
+		"btnText": "Registar",
+		"and": "e&nbsp;receba",
+		"items": [
+			"Transmiss&atilde;o <br> ao&nbsp;vivo",
+			"Transmiss&otilde;es <br> de&nbsp;jogos&nbsp;gratuitas",
+			"Registo <br> f&aacute;cil"
+		]
+	},
+	"cz": {
+		"name": "cz",
+		"title": "22bet - watch sports online",
+		"btnText": "Registrace",
+		"and": "a&nbsp;z&iacute;skejte",
+		"items": [
+			"Živ&eacute; <br> vys&iacute;l&aacute;n&iacute;",
+			"Bezplatn&eacute; <br> přenosy&nbsp;z&aacute;pasů",
+			"Snadn&aacute; <br> registrace"
+		]
+	},
+	"ro": {
+		"name": "ro",
+		"title": "22bet - watch sports online",
+		"btnText": "&Icirc;nregistrare",
+		"and": "și&nbsp;primiți",
+		"items": [
+			"Transmisiune <br> &icirc;n&nbsp;direct",
+			"Transmisiuni <br> gratuite&nbsp;ale&nbsp;meciurilor",
+			"&Icirc;nregistrare <br> ușoară"
+		]
+	},
+	"hu": {
+		"name": "hu",
+		"title": "22bet - watch sports online",
+		"btnText": "Regisztr&aacute;ci&oacute;",
+		"and": "&eacute;s&nbsp;szerezzen",
+		"items": [
+			"&Eacute;lő <br> k&ouml;zvet&iacute;t&eacute;s",
+			"Ingyenes&nbsp;m&eacute;rkőz&eacute;s <br> k&ouml;zvet&iacute;t&eacute;sek",
+			"Egyszerű <br> regisztr&aacute;ci&oacute;"
+		]
 	}
 }

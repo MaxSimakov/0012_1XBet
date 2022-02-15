@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>22bet - watch sports online</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=750,   maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+		<script>
+			let viewport = document.querySelector("meta[name=viewport]");
+			var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+			if (is_safari) {
+				//- alert(navigator.userAgent);
+				function w() {
+					this.outerWidth > 750 
+						? viewport.content = "width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" 
+						:  viewport.content = "width=750,   maximum-scale=1 , user-scalable=0, shrink-to-fit=no" 
+					//- alert(this.outerWidth + ', '+  viewport.content);
+				}
+				 w();
+				window.addEventListener('resize', () => { 
+				 w();
+				}, { passive: true });
+			};
+			let vh = window.innerHeight * 0.01;
+			// Then we set the value in the --vh custom property to the root of the document
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+			
+			// We listen to the resize event
+			window.addEventListener('resize', () => {
+				// We execute the same script as before
+				let vh = window.innerHeight * 0.01;
+				document.documentElement.style.setProperty('--vh', `${vh}px`);
+			}, { passive: true });
+		</script>
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no">
+		<link href="css/main.min.css" rel="stylesheet"/>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<!-- start sWatchSports22-->
+			<section class="sWatchSports22 sWatchSports22--alt bg-wrap section" id="sWatchSports22">
+				<picture class="picture-bg">
+					<source type="image/webp" srcset="img/@2x/webp/watch22alt-bg-lg.webp" media="(min-width:992px)"/>
+					<source type="image/webp" srcset="img/@2x/webp/watch22alt-bg-sm.webp"/>
+					<source type="image/png" srcset="img/@2x/watch22alt-bg-lg.png" media="(min-width:992px)"/>
+					<source type="image/png" srcset="img/@2x/watch22alt-bg-sm.png"/><img class="object-fit-js" src="img/@2x/watch22alt-bg-lg.png" alt="" loading="lazy"/>
+				</picture>
+				<div class="sWatchSports22__logo"><img src="img/@2x/logo-22.png" alt=""/>
+				</div>
+				<div class="sWatchSports22__main">
+					<div class="sWatchSports22__wrap">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-xl"><img src="img/svg/sWatchLive-pt.svg" alt=""/></div>
+							<div class="col-xl-auto">
+								<p>e&nbsp;receba</p>
+							</div>
+							<div class="col-xl"><img src="img/svg/freebets-pt.svg" alt=""/></div>
+						</div>
+					</div>
+					<div class="sWatchSports22__advantages">
+						<div class="sWatchSports22__item">
+							<div class="sWatchSports22__img-wrap"><img src="img/svg/advantage22alt-1.svg" alt="">
+							</div>
+							<div class="text-white">Transmiss&atilde;o <br> ao&nbsp;vivo</div>
+						</div>
+						<div class="sWatchSports22__item">
+							<div class="sWatchSports22__img-wrap"><img src="img/svg/advantage22alt-2.svg" alt="">
+							</div>
+							<div class="text-white">Transmiss&otilde;es <br> de&nbsp;jogos&nbsp;gratuitas</div>
+						</div>
+						<div class="sWatchSports22__item">
+							<div class="sWatchSports22__img-wrap"><img src="img/svg/advantage22alt-3.svg" alt="">
+							</div>
+							<div class="text-white">Registo <br> f&aacute;cil</div>
+						</div>
+					</div>
+				</div>
+				<a class="sWatchSports22__btn" href="https://stv.one/22bet_streaming"><span>Registar</span>
+				</a>
+			</section>
+			<!-- end sWatchSports22-->
+		</div>
+	</body>
+</html>
