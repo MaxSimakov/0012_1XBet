@@ -1,0 +1,25 @@
+extends layout/main.pug
+
+
+include ../blocks/sWatchSports22/_sWatchSports22.pug
+//- include ../blocks/sContact/_sContact.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	-
+		const lang= sk
+		const title= lang.title
+	title= title
+block pagecontent
+	+sWatchSports22Alt(lang.name, lang.btnText, lang.and)
+		+e.advantages
+				each item, index in lang.items
+						+e.item
+							+e.img-wrap
+								img(src=`img/svg/advantage22alt-${index + 1}.svg`, alt="")
+							.text-white!= item
+
+

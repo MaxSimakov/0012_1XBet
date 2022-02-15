@@ -108,5 +108,27 @@
 			"Bezpłatne <br> transmisje&nbsp;mecz&oacute;w",
 			"Łatwa <br> rejestracja"
 		]
+	},
+	"sk": {
+		"name": "sk",
+		"title": "22bet - watch sports online",
+		"btnText": "Registr&aacute;cia",
+		"and": "a&nbsp;z&iacute;skajte",
+		"items": [
+			"Živ&eacute; <br> vysielanie",
+			"Bezplatn&eacute; <br> prenosy&nbsp;z&aacute;pasov",
+			"Jednoduch&aacute; <br> registr&aacute;cia"
+		]
+	},
+	"gr": {
+		"name": "gr",
+		"title": "22bet - watch sports online",
+		"btnText": "&Epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή",
+		"and": "&kappa;&alpha;&iota; &kappa;&epsilon;&rho;&delta;ί&sigma;&tau;&epsilon;",
+		"items": [
+			"&Zeta;&omega;&nu;&tau;&alpha;&nu;ή <br> &mu;&epsilon;&tau;ά&delta;&omicron;&sigma;&eta;",
+			"&Delta;&omega;&rho;&epsilon;ά&nu; <br> &mu;&epsilon;&tau;&alpha;&delta;ό&sigma;&epsilon;&iota;&sigmaf;&nbsp;&alpha;&gamma;ώ&nu;&omega;&nu;",
+			"&Epsilon;ύ&kappa;&omicron;&lambda;&eta; <br> &epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή"
+		]
 	}
 }
