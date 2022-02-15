@@ -31,6 +31,7 @@ global.$ = {
     pscss: require('postcss-scss'),
     syntax: require('postcss-syntax')({ scss: 'postcss-scss'}),
     plumber: require('gulp-plumber'),
+    data: require('gulp-data'), 
     // resizer: require('gulp-images-resizer'),
     path: {
         tasks: require('./gulp/config/tasks.js'),

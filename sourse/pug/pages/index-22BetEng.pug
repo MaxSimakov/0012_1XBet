@@ -10,24 +10,16 @@ block variables
 
 block title
 	-
-		let  title= '22bet - watch sports online'
-		let content = {
-			language: "eng",
-			btnText: 'registration',
-			items: [
-				"live <br> broadcasts",
-				"Free match <br> broadcasts",
-				"Easy <br> registration"
-				]
-		}
+		const lang= eng
+		const title= lang.title
 	title= title
 block pagecontent
-	+sWatchSports22Alt(content.language, content.btnText)
+	+sWatchSports22Alt(lang.name, lang.btnText)
 		+e.advantages
-				each item, index in content.items
+				each item, index in lang.items
 						+e.item
 							+e.img-wrap
-								img(src=`img/svg/advantage22alt-${index}.svg`, alt="")
+								img(src=`img/svg/advantage22alt-${index + 1}.svg`, alt="")
 							.text-white!= item
 
 
