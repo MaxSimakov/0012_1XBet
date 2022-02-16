@@ -20,7 +20,7 @@ mixin sWatchSports22(i, b)
 			span!= b
 	// end sWatchSports22
 
-mixin sWatchSports22Alt(i, b, and)
+mixin sWatchSports22Alt(i, b, and, link='default')
 	// start sWatchSports22
 	+b.SECTION.sWatchSports22--alt.bg-wrap.section#sWatchSports22&attributes(attributes)
 		picture.picture-bg
@@ -41,7 +41,7 @@ mixin sWatchSports22Alt(i, b, and)
 					.col-xl
 						img(src=`img/svg/freebets-${i}.svg`, alt="")
 			block
-		+e.btn(href="https://stv.one/22bet_streaming")
+		+e.btn(href=`https://stv.one/22bet_streaming_${link}`)
 			span!= b
 	// end sWatchSports22
 

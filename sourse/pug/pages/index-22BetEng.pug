@@ -10,11 +10,11 @@ block variables
 
 block title
 	-
-		const lang= de
+		const lang= eng
 		const title= lang.title
 	title= title
 block pagecontent
-	+sWatchSports22Alt(lang.name, lang.btnText, lang.and)
+	+sWatchSports22Alt(lang.name, lang.btnText, lang.and, lang.name)
 		+e.advantages
 				each item, index in lang.items
 						+e.item
